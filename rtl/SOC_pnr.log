@@ -1,0 +1,341 @@
+Info: constraining clock net 'clk' to 25.00 MHz
+
+Info: Logic utilisation before packing:
+Info:     Total LUT4s:      1997/24288     8%
+Info:         logic LUTs:   1541/24288     6%
+Info:         carry LUTs:    264/24288     1%
+Info:           RAM LUTs:    128/ 3036     4%
+Info:          RAMW LUTs:     64/ 6072     1%
+
+Info:      Total DFFs:       594/24288     2%
+
+Info: Packing IOs..
+Info: pin 'resetn$tr_io' constrained to Bel 'X6/Y50/PIOA'.
+Info: pin 'clk$tr_io' constrained to Bel 'X0/Y47/PIOC'.
+Info: pin 'TXD$tr_io' constrained to Bel 'X11/Y0/PIOA'.
+Info: pin 'RXD$tr_io' constrained to Bel 'X9/Y0/PIOB'.
+Info: pin 'LEDS$tr_io' constrained to Bel 'X4/Y50/PIOA'.
+Info: Packing constants..
+Info: Packing carries...
+Info: Packing LUTs...
+Info: Packing LUT5-7s...
+Info: Packing FFs...
+Info:     406 FFs paired with LUTs.
+Info: Generating derived timing constraints...
+Info: Promoting globals...
+Info:     promoting clock net clk$TRELLIS_IO_IN to global network
+Info: Checksum: 0xa1d8fb65
+
+Info: Device utilisation:
+Info: 	          TRELLIS_IO:     5/  197     2%
+Info: 	                DCCA:     1/   56     1%
+Info: 	              DP16KD:     4/   56     7%
+Info: 	          MULT18X18D:     0/   28     0%
+Info: 	              ALU54B:     0/   14     0%
+Info: 	             EHXPLLL:     0/    2     0%
+Info: 	             EXTREFB:     0/    1     0%
+Info: 	                DCUA:     0/    1     0%
+Info: 	           PCSCLKDIV:     0/    2     0%
+Info: 	             IOLOGIC:     0/  128     0%
+Info: 	            SIOLOGIC:     0/   69     0%
+Info: 	                 GSR:     0/    1     0%
+Info: 	               JTAGG:     0/    1     0%
+Info: 	                OSCG:     0/    1     0%
+Info: 	               SEDGA:     0/    1     0%
+Info: 	                 DTR:     0/    1     0%
+Info: 	             USRMCLK:     0/    1     0%
+Info: 	             CLKDIVF:     0/    4     0%
+Info: 	           ECLKSYNCB:     0/   10     0%
+Info: 	             DLLDELD:     0/    8     0%
+Info: 	              DDRDLL:     0/    4     0%
+Info: 	             DQSBUFM:     0/    8     0%
+Info: 	     TRELLIS_ECLKBUF:     0/    8     0%
+Info: 	        ECLKBRIDGECS:     0/    2     0%
+Info: 	                DCSC:     0/    2     0%
+Info: 	          TRELLIS_FF:   594/24288     2%
+Info: 	        TRELLIS_COMB:  2067/24288     8%
+Info: 	        TRELLIS_RAMW:    32/ 3036     1%
+
+Info: Placed 5 cells based on constraints.
+Info: Creating initial analytic placement for 1355 cells, random placement wirelen = 91969.
+Info:     at initial placer iter 0, wirelen = 608
+Info:     at initial placer iter 1, wirelen = 558
+Info:     at initial placer iter 2, wirelen = 587
+Info:     at initial placer iter 3, wirelen = 597
+Info: Running main analytical placer, max placement attempts per cell = 913276.
+Info:     at iteration #1, type ALL: wirelen solved = 694, spread = 13533, legal = 14836; time = 0.05s
+Info:     at iteration #2, type ALL: wirelen solved = 1291, spread = 12489, legal = 13614; time = 0.03s
+Info:     at iteration #3, type ALL: wirelen solved = 1581, spread = 11320, legal = 12147; time = 0.03s
+Info:     at iteration #4, type ALL: wirelen solved = 2133, spread = 11619, legal = 12349; time = 0.03s
+Info:     at iteration #5, type ALL: wirelen solved = 2591, spread = 11274, legal = 12039; time = 0.03s
+Info:     at iteration #6, type ALL: wirelen solved = 2683, spread = 10975, legal = 11393; time = 0.05s
+Info:     at iteration #7, type ALL: wirelen solved = 3133, spread = 10858, legal = 11310; time = 0.04s
+Info:     at iteration #8, type ALL: wirelen solved = 3373, spread = 10499, legal = 11170; time = 0.03s
+Info:     at iteration #9, type ALL: wirelen solved = 3627, spread = 10678, legal = 11291; time = 0.03s
+Info:     at iteration #10, type ALL: wirelen solved = 3984, spread = 10491, legal = 11111; time = 0.03s
+Info:     at iteration #11, type ALL: wirelen solved = 4183, spread = 10098, legal = 10587; time = 0.03s
+Info:     at iteration #12, type ALL: wirelen solved = 4405, spread = 9686, legal = 10329; time = 0.03s
+Info:     at iteration #13, type ALL: wirelen solved = 4423, spread = 9921, legal = 10543; time = 0.03s
+Info:     at iteration #14, type ALL: wirelen solved = 4873, spread = 10216, legal = 10793; time = 0.03s
+Info:     at iteration #15, type ALL: wirelen solved = 5071, spread = 10132, legal = 10590; time = 0.03s
+Info:     at iteration #16, type ALL: wirelen solved = 5025, spread = 10550, legal = 10705; time = 0.03s
+Info:     at iteration #17, type ALL: wirelen solved = 5590, spread = 10183, legal = 10774; time = 0.04s
+Info: HeAP Placer Time: 0.93s
+Info:   of which solving equations: 0.60s
+Info:   of which spreading cells: 0.07s
+Info:   of which strict legalisation: 0.04s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 1184, wirelen = 10329
+Info:   at iteration #5: temp = 0.000000, timing cost = 954, wirelen = 8886
+Info:   at iteration #10: temp = 0.000000, timing cost = 958, wirelen = 8533
+Info:   at iteration #15: temp = 0.000000, timing cost = 724, wirelen = 8322
+Info:   at iteration #20: temp = 0.000000, timing cost = 788, wirelen = 8248
+Info:   at iteration #25: temp = 0.000000, timing cost = 778, wirelen = 8211
+Info:   at iteration #25: temp = 0.000000, timing cost = 773, wirelen = 8219 
+Info: SA placement time 2.58s
+
+Info: Max frequency for clock '$glbnet$clk$TRELLIS_IO_IN': 55.83 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                           -> posedge $glbnet$clk$TRELLIS_IO_IN: 11.35 ns
+Info: Max delay posedge $glbnet$clk$TRELLIS_IO_IN -> <async>                          : 5.41 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 7 endpoint(s)
+Info:          + represents [1,7) endpoint(s)
+Info: [ 11044,  12454) |+
+Info: [ 12454,  13864) |+
+Info: [ 13864,  15274) |**+
+Info: [ 15274,  16684) |******************+
+Info: [ 16684,  18094) |********************+
+Info: [ 18094,  19504) |*********+
+Info: [ 19504,  20914) | 
+Info: [ 20914,  22324) | 
+Info: [ 22324,  23734) | 
+Info: [ 23734,  25144) |******+
+Info: [ 25144,  26554) |**********+
+Info: [ 26554,  27964) |***********+
+Info: [ 27964,  29374) |**********+
+Info: [ 29374,  30784) |***************+
+Info: [ 30784,  32194) |*****************************************+
+Info: [ 32194,  33604) |************************************************************ 
+Info: [ 33604,  35014) |*******************+
+Info: [ 35014,  36424) |************+
+Info: [ 36424,  37834) |*************************+
+Info: [ 37834,  39244) |*************************+
+Info: Checksum: 0x51cda3fa
+Info: Routing globals...
+Info:     routing clock net $glbnet$clk$TRELLIS_IO_IN using global 0
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 8858 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |      137        862 |  137   862 |      8050|       0.15       0.15|
+Info:       2000 |      312       1687 |  175   825 |      7404|       0.11       0.26|
+Info:       3000 |      544       2455 |  232   768 |      6736|       0.14       0.40|
+Info:       4000 |      808       3191 |  264   736 |      6100|       0.12       0.52|
+Info:       5000 |     1120       3879 |  312   688 |      5520|       0.11       0.64|
+Info:       6000 |     1490       4509 |  370   630 |      4990|       0.13       0.77|
+Info:       7000 |     1808       5191 |  318   682 |      4441|       0.16       0.93|
+Info:       8000 |     2078       5862 |  270   671 |      3809|       0.12       1.05|
+Info:       9000 |     2311       6521 |  233   659 |      3075|       0.10       1.15|
+Info:      10000 |     2586       7163 |  275   642 |      2391|       0.12       1.27|
+Info:      11000 |     2780       7899 |  194   736 |      1603|       0.11       1.38|
+Info:      12000 |     2910       8688 |  130   789 |       778|       0.14       1.52|
+Info:      12821 |     2946       9384 |   36   696 |         0|       0.14       1.66|
+Info: Routing complete.
+Info: Router1 time 1.66s
+Info: Checksum: 0xf440947f
+
+Info: Critical path report for clock '$glbnet$clk$TRELLIS_IO_IN' (negedge -> posedge):
+Info: curr total
+Info:  0.5  0.5  Source sqrt1.sqrt1.regA0.regA_total_TRELLIS_FF_Q_31.Q
+Info:  1.2  1.7    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_LUT4_D_Z_LUT4_Z_1_D[1] (18,23) -> (19,21)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0$CCU2_COMB0.B
+Info:                Defined in:
+Info:                  cores/test/sqrt/restar.v:3.14-3.16
+Info:  0.4  2.1  Source sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0$CCU2_COMB0.FCO
+Info:  0.0  2.1    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0$CCU2_FCI_INT (19,21) -> (19,21)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0$CCU2_COMB1.FCI
+Info:  0.0  2.1  Source sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0$CCU2_COMB1.FCO
+Info:  0.0  2.1    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT[2] (19,21) -> (19,21)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT_CCU2C_CIN$CCU2_COMB0.FCI
+Info:                Defined in:
+Info:                  cores/test/sqrt/comp1.v:6.13-6.20
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/arith_map.v:63.22-63.23
+Info:  0.1  2.2  Source sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT_CCU2C_CIN$CCU2_COMB0.FCO
+Info:  0.0  2.2    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT_CCU2C_CIN$CCU2_FCI_INT (19,21) -> (19,21)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT_CCU2C_CIN$CCU2_COMB1.FCI
+Info:  0.0  2.2  Source sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT_CCU2C_CIN$CCU2_COMB1.FCO
+Info:  0.0  2.2    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT_CCU2C_CIN_COUT (19,21) -> (19,21)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCI
+Info:                Defined in:
+Info:                  cores/test/sqrt/comp1.v:6.13-6.20
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:  0.1  2.3  Source sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCO
+Info:  0.0  2.3    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_FCI_INT (19,21) -> (19,21)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCI
+Info:  0.0  2.3  Source sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCO
+Info:  0.0  2.3    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT (19,21) -> (20,21)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCI
+Info:                Defined in:
+Info:                  cores/test/sqrt/comp1.v:6.13-6.20
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:  0.1  2.3  Source sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB0.FCO
+Info:  0.0  2.3    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_FCI_INT (20,21) -> (20,21)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCI
+Info:  0.0  2.3  Source sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN$CCU2_COMB1.FCO
+Info:  0.0  2.3    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_A_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT (20,21) -> (20,21)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCI
+Info:                Defined in:
+Info:                  cores/test/sqrt/comp1.v:6.13-6.20
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:  0.1  2.4  Source sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCO
+Info:  0.0  2.4    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_FCI_INT (20,21) -> (20,21)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCI
+Info:  0.0  2.4  Source sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCO
+Info:  0.0  2.4    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT_CIN (20,21) -> (20,21)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCI
+Info:                Defined in:
+Info:                  cores/test/sqrt/comp1.v:6.13-6.20
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:  0.1  2.5  Source sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCO
+Info:  0.0  2.5    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_FCI_INT (20,21) -> (20,21)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCI
+Info:  0.0  2.5  Source sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT_CIN_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCO
+Info:  0.0  2.5    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT_CIN_CCU2C_COUT_CIN (20,21) -> (20,21)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCI
+Info:                Defined in:
+Info:                  cores/test/sqrt/comp1.v:6.13-6.20
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:  0.1  2.6  Source sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB0.FCO
+Info:  0.0  2.6    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_FCI_INT (20,21) -> (20,21)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCI
+Info:  0.0  2.6  Source sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT_CIN_CCU2C_COUT$CCU2_COMB1.FCO
+Info:  0.0  2.6    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT_CIN (20,21) -> (21,21)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT$CCU2_COMB0.FCI
+Info:                Defined in:
+Info:                  cores/test/sqrt/comp1.v:6.13-6.20
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/arith_map.v:74.7-80.4
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_sim.v:82.9-82.13
+Info:  0.1  2.6  Source sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT$CCU2_COMB0.FCO
+Info:  0.0  2.6    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT$CCU2_FCI_INT (21,21) -> (21,21)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT$CCU2_COMB1.FCI
+Info:  0.0  2.6  Source sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B_CCU2C_COUT$CCU2_COMB1.FCO
+Info:  0.0  2.6    Net $nextpnr_CCU2C_9$CIN (21,21) -> (21,21)
+Info:                Sink $nextpnr_CCU2C_9$CCU2_COMB0.FCI
+Info:  0.4  3.1  Source $nextpnr_CCU2C_9$CCU2_COMB0.F
+Info:  0.8  3.9    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z_B (21,21) -> (19,24)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z.B
+Info:                Defined in:
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  4.1  Source sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D_LUT4_Z.F
+Info:  0.4  4.5    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2_D[3] (19,24) -> (19,24)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2.D
+Info:                Defined in:
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  4.8  Source sqrt1.init_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_2.F
+Info:  0.7  5.4    Net sqrt1.init_LUT4_B_Z_LUT4_Z_1_D[2] (19,24) -> (18,24)
+Info:                Sink sqrt1.init_LUT4_B_Z_LUT4_D_Z_LUT4_Z_1.D
+Info:                Defined in:
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  5.7  Source sqrt1.init_LUT4_B_Z_LUT4_D_Z_LUT4_Z_1.F
+Info:  0.7  6.4    Net sqrt1.done_TRELLIS_FF_Q_DI[0] (18,24) -> (19,26)
+Info:                Sink sqrt1.sqrt1.regR0.add_1_TRELLIS_FF_Q_LSR_LUT4_Z_D_LUT4_Z.D
+Info:                Defined in:
+Info:                  cores/test/sqrt/state_machinesqrt.v:0.0-0.0
+Info:                  cores/test/sqrt/state_machinesqrt.v:53.9-116.16
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/techmap.v:575.21-575.22
+Info:  0.2  6.7  Source sqrt1.sqrt1.regR0.add_1_TRELLIS_FF_Q_LSR_LUT4_Z_D_LUT4_Z.F
+Info:  0.6  7.3    Net sqrt1.sqrt1.regA0.load2_TRELLIS_FF_Q_LSR[0] (19,26) -> (19,26)
+Info:                Sink sqrt1.sqrt1.regR0.add_1_TRELLIS_FF_Q_LSR_LUT4_Z_D_LUT4_C.C
+Info:                Defined in:
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  7.5  Source sqrt1.sqrt1.regR0.add_1_TRELLIS_FF_Q_LSR_LUT4_Z_D_LUT4_C.F
+Info:  0.5  8.0    Net sqrt1.sqrt1.regR0.add_1_TRELLIS_FF_Q_LSR_LUT4_Z_D_LUT4_C_Z[1] (19,26) -> (19,26)
+Info:                Sink sqrt1.sqrt1.regR0.add_0_TRELLIS_FF_Q_LSR_LUT4_Z.D
+Info:                Defined in:
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  8.2  Source sqrt1.sqrt1.regR0.add_0_TRELLIS_FF_Q_LSR_LUT4_Z.F
+Info:  0.9  9.1    Net sqrt1.sqrt1.regR0.add_0_TRELLIS_FF_Q_LSR (19,26) -> (19,22)
+Info:                Sink sqrt1.sqrt1.regR0.add_0_TRELLIS_FF_Q.LSR
+Info:  0.4  9.6  Setup sqrt1.sqrt1.regR0.add_0_TRELLIS_FF_Q.LSR
+Info: 3.8 ns logic, 5.8 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$clk$TRELLIS_IO_IN':
+Info: curr total
+Info:  0.0  0.0  Source resetn$tr_io.O
+Info:  2.4  2.4    Net resetn$TRELLIS_IO_IN (6,50) -> (8,19)
+Info:                Sink CPU.aluShamt_TRELLIS_FF_Q_DI_LUT4_Z_D_LUT4_D_Z_LUT4_Z_1_D_LUT4_D_Z_LUT4_D_Z_CCU2C_S1_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S1_LUT4_Z_D_LUT4_C_Z_LUT4_Z_1_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_LUT4_Z.B
+Info:                Defined in:
+Info:                  SOC.v:4.18-4.24
+Info:  0.2  2.7  Source CPU.aluShamt_TRELLIS_FF_Q_DI_LUT4_Z_D_LUT4_D_Z_LUT4_Z_1_D_LUT4_D_Z_LUT4_D_Z_CCU2C_S1_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S1_LUT4_Z_D_LUT4_C_Z_LUT4_Z_1_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D_LUT4_Z.F
+Info:  0.4  3.1    Net CPU.aluShamt_TRELLIS_FF_Q_DI_LUT4_Z_D_LUT4_D_Z_LUT4_Z_1_D_LUT4_D_Z_LUT4_D_Z_CCU2C_S1_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S1_LUT4_Z_D_LUT4_C_Z_LUT4_Z_1_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z_D[3] (8,19) -> (8,18)
+Info:                Sink CPU.aluShamt_TRELLIS_FF_Q_DI_LUT4_Z_D_LUT4_D_Z_LUT4_Z_1_D_LUT4_D_Z_LUT4_D_Z_CCU2C_S1_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S1_LUT4_Z_D_LUT4_C_Z_LUT4_Z_1_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z.D
+Info:                Defined in:
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  3.3  Source CPU.aluShamt_TRELLIS_FF_Q_DI_LUT4_Z_D_LUT4_D_Z_LUT4_Z_1_D_LUT4_D_Z_LUT4_D_Z_CCU2C_S1_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S1_LUT4_Z_D_LUT4_C_Z_LUT4_Z_1_B_LUT4_B_Z_LUT4_Z_1_D_LUT4_Z.F
+Info:  0.7  4.0    Net CPU.aluShamt_TRELLIS_FF_Q_DI_LUT4_Z_D_LUT4_D_Z_LUT4_Z_1_D_LUT4_D_Z_LUT4_D_Z_CCU2C_S1_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S1_LUT4_Z_D_LUT4_C_Z_LUT4_Z_1_B_LUT4_B_Z_LUT4_Z_1_C[2] (8,18) -> (9,16)
+Info:                Sink CPU.aluShamt_TRELLIS_FF_Q_DI_LUT4_Z_D_LUT4_D_Z_LUT4_Z_1_D_LUT4_D_Z_LUT4_D_Z_CCU2C_S1_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S1_LUT4_Z_D_LUT4_C_Z_LUT4_Z_1_B_LUT4_B_Z_LUT4_Z_1.D
+Info:                Defined in:
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  4.3  Source CPU.aluShamt_TRELLIS_FF_Q_DI_LUT4_Z_D_LUT4_D_Z_LUT4_Z_1_D_LUT4_D_Z_LUT4_D_Z_CCU2C_S1_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S1_LUT4_Z_D_LUT4_C_Z_LUT4_Z_1_B_LUT4_B_Z_LUT4_Z_1.F
+Info:  2.5  6.8    Net CPU.PC_TRELLIS_FF_Q_22_CE_LUT4_Z_D_CCU2C_S0_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_COUT_CCU2C_CIN_S1_LUT4_D_Z_LUT4_C_Z[1] (9,16) -> (20,11)
+Info:                Sink CPU.aluShamt_TRELLIS_FF_Q_DI_LUT4_Z_D_LUT4_D_Z_LUT4_Z_1_D_LUT4_D_Z_LUT4_D_Z_CCU2C_S1_COUT_CCU2C_CIN_S1_LUT4_Z_D_CCU2C_S0_COUT_CCU2C_CIN_S1_LUT4_C_Z_LUT4_C_Z_LUT4_Z_11.B
+Info:                Defined in:
+Info:                  /home/felipe-zorro/miniconda3/envs/digital/bin/../share/yosys/ecp5/cells_map.v:108.23-108.24
+Info:  0.2  7.0  Source CPU.aluShamt_TRELLIS_FF_Q_DI_LUT4_Z_D_LUT4_D_Z_LUT4_Z_1_D_LUT4_D_Z_LUT4_D_Z_CCU2C_S1_COUT_CCU2C_CIN_S1_LUT4_Z_D_CCU2C_S0_COUT_CCU2C_CIN_S1_LUT4_C_Z_LUT4_C_Z_LUT4_Z_11.F
+Info:  1.0  8.0    Net CPU.aluShamt_TRELLIS_FF_Q_DI_LUT4_Z_D_LUT4_D_Z_LUT4_Z_1_D_LUT4_D_Z_LUT4_D_Z_CCU2C_S1_COUT_CCU2C_CIN_S1_LUT4_Z_D_CCU2C_S0_COUT_CCU2C_CIN_S1_LUT4_C_Z_LUT4_C_Z[16] (20,11) -> (20,14)
+Info:                Sink CPU.registerFile.0.4$RAMW_SLICE.C1
+Info:  0.0  8.0  Source CPU.registerFile.0.4$RAMW_SLICE.WDO0
+Info:  0.1  8.1    Net CPU.registerFile.0.4$RAMW_SLICE$conn$WDO0 (20,14) -> (20,14)
+Info:                Sink CPU.registerFile.0.4$DPRAM_COMB0.WD
+Info:  0.0  8.1  Setup CPU.registerFile.0.4$DPRAM_COMB0.WD
+Info: 0.9 ns logic, 7.1 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk$TRELLIS_IO_IN' -> '<async>':
+Info: curr total
+Info:  0.5  0.5  Source LEDS_TRELLIS_FF_Q.Q
+Info:  3.4  3.9    Net LEDS$TRELLIS_IO_OUT (7,6) -> (4,50)
+Info:                Sink LEDS$tr_io.I
+Info:                Defined in:
+Info:                  cores/uart/perip_uart.v:21.11-21.20
+Info: 0.5 ns logic, 3.4 ns routing
+
+Info: Max frequency for clock '$glbnet$clk$TRELLIS_IO_IN': 52.26 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                           -> posedge $glbnet$clk$TRELLIS_IO_IN: 8.07 ns
+Info: Max delay posedge $glbnet$clk$TRELLIS_IO_IN -> <async>                          : 3.94 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 10 endpoint(s)
+Info:          + represents [1,10) endpoint(s)
+Info: [ 10432,  11864) |+
+Info: [ 11864,  13296) |+
+Info: [ 13296,  14728) |+
+Info: [ 14728,  16160) |*********+
+Info: [ 16160,  17592) |**********+
+Info: [ 17592,  19024) |**************+
+Info: [ 19024,  20456) | 
+Info: [ 20456,  21888) | 
+Info: [ 21888,  23320) | 
+Info: [ 23320,  24752) | 
+Info: [ 24752,  26184) | 
+Info: [ 26184,  27616) |********+
+Info: [ 27616,  29048) |************+
+Info: [ 29048,  30480) |*****+
+Info: [ 30480,  31912) |*************+
+Info: [ 31912,  33344) |*****************+
+Info: [ 33344,  34776) |************************************************************ 
+Info: [ 34776,  36208) |***********+
+Info: [ 36208,  37640) |**************+
+Info: [ 37640,  39072) |***********************+
+
+Info: Program finished normally.
