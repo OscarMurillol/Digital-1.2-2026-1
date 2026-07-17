@@ -1,0 +1,28 @@
+# Reloj de 25MHz
+LOCATE COMP "clk" SITE "P6";
+IOBUF PORT "clk" IO_TYPE=LVCMOS33;
+FREQUENCY PORT "clk" 25 MHZ;
+
+# Salida de datos hacia la matriz WS2812 (Pin F3, conector J2 = salidas)
+LOCATE COMP "led_out" SITE "F3";
+IOBUF PORT "led_out" IO_TYPE=LVCMOS33;
+
+# boton reset (Pin R7)
+LOCATE COMP "reset" SITE "R7";
+IOBUF PORT "reset" IO_TYPE=LVCMOS33;
+
+
+
+# ---- BOTONES: 5 pulsadores externos en el conector J1 (entradas) ----
+# Cada botón se conecta entre el pin indicado y GND (hay GND en el mismo J1).
+# PULLMODE=UP activa el pull-up interno: reposo=1, presionado=0 (activo en bajo).
+LOCATE COMP "btn_up"    SITE "C4";
+IOBUF PORT "btn_up"    IO_TYPE=LVCMOS33 PULLMODE=UP;
+LOCATE COMP "btn_down"  SITE "D4";
+IOBUF PORT "btn_down"  IO_TYPE=LVCMOS33 PULLMODE=UP;
+LOCATE COMP "btn_left"  SITE "D3";
+IOBUF PORT "btn_left"  IO_TYPE=LVCMOS33 PULLMODE=UP;
+LOCATE COMP "btn_right" SITE "E3";
+IOBUF PORT "btn_right" IO_TYPE=LVCMOS33 PULLMODE=UP;
+LOCATE COMP "btn_enter" SITE "E4";
+IOBUF PORT "btn_enter" IO_TYPE=LVCMOS33 PULLMODE=UP;

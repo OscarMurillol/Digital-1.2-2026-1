@@ -1,0 +1,29 @@
+[*]
+[*] GTKWave Analyzer v3.3.126 (w)1999-2026 BSI
+[*] Fri Jul 17 03:25:50 2026
+[*]
+[dumpfile] "/home/soycd/Escritorio/CaballodeTroya(euler)/sim/tb_ws2812.vcd"
+[dumpfile_mtime] "Fri Jul 17 03:21:33 2026"
+[dumpfile_size] 57009
+[savefile] "/home/soycd/Escritorio/CaballodeTroya(euler)/sim/simulacionws2812.gtkw"
+[timestart] 0
+[size] 1280 720
+[pos] -281 -23
+*-23.148323 2040000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_ws2812.
+[treeopen] tb_ws2812.DUT.
+[sst_width] 273
+[signals_width] 102
+[sst_expanded] 1
+[sst_vpaned_height] 203
+@28
+tb_ws2812.clk
+tb_ws2812.init
+@22
+tb_ws2812.DUT.RGB[23:0]
+@28
+tb_ws2812.DUT.DOUT
+@29
+tb_ws2812.DUT.DONE
+[pattern_trace] 1
+[pattern_trace] 0

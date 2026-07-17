@@ -1,0 +1,48 @@
+[*]
+[*] GTKWave Analyzer v3.3.126 (w)1999-2026 BSI
+[*] Fri Jul 17 03:20:20 2026
+[*]
+[dumpfile] "/home/soycd/Escritorio/CaballodeTroya(euler)/sim/tb_juego.vcd"
+[dumpfile_mtime] "Fri Jul 17 03:04:44 2026"
+[dumpfile_size] 28890
+[savefile] "/home/soycd/Escritorio/CaballodeTroya(euler)/sim/simulacionjuego.gtkw"
+[timestart] 0
+[size] 1280 653
+[pos] -281 -23
+*-21.867521 6240000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_juego.
+[treeopen] tb_juego.DUT.
+[treeopen] tb_juego.DUT.CURSOR0.
+[sst_width] 273
+[signals_width] 198
+[sst_expanded] 1
+[sst_vpaned_height] 179
+@28
+tb_juego.DUT.CURSOR0.b_u
+tb_juego.DUT.CURSOR0.b_d
+tb_juego.DUT.CURSOR0.b_l
+tb_juego.DUT.CURSOR0.b_r
+tb_juego.DUT.CURSOR0.b_e
+tb_juego.DUT.CURSOR0.c_s[2:0]
+tb_juego.DUT.CURSOR0.f_s[2:0]
+tb_juego.DUT.CURSOR0.enter
+@24
+tb_juego.DUT.mc0.estado[2:0]
+@28
+tb_juego.DUT.mc0.cal_mov_va
+tb_juego.DUT.mc0.done_calc
+@22
+tb_juego.DUT.CALCULADORA0.pos_movi[63:0]
+@28
+tb_juego.DUT.VALIDADOR0.ju_valida
+tb_juego.DUT.JUGADAS0.add_jugadas
+tb_juego.DUT.mc0.load_fc
+@24
+tb_juego.DUT.CABALLO0.f_out[2:0]
+tb_juego.DUT.CABALLO0.c_out[2:0]
+@22
+tb_juego.DUT.PANTALLA0.tablero[63:0]
+@25
+tb_juego.DUT.JUGADAS0.casillas_pisadas[6:0]
+[pattern_trace] 1
+[pattern_trace] 0
