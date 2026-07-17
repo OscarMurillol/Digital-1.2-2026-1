@@ -1,5 +1,5 @@
 
-  # "Caballo de Troya" en FPGA con matriz led WS2812
+# "Caballo de Troya" en FPGA con matriz led WS2812
 
 Proyecto realizado por: 
 
