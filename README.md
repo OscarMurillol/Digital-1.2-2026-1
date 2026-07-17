@@ -1,10 +1,11 @@
+
   # "Caballo de Troya" en FPGA con matriz led WS2812
 
 Proyecto realizado por: 
 Juan Sebastian Rincon Aguilera C.C. 1023372486
 David Felipe Zorro Pulido C.C. 1014978946
 Oscar Miguel Murillo Loreo C.C. 1010166751
-
+<img width="3888" height="6101" alt="EL FOKIN CABALLO" src="https://github.com/user-attachments/assets/a52ee71f-349a-4ea1-9cae-aa4cddeb00ab" />
 El objetivo de este proyecto es implementar el juego del "Caballo de Euler" el cual consiste en mover un caballo de ajedrez por un tablero de 8×8
 intentando pisar las 64 casillas sin repetir ninguna. El juego corre
 completamente en hardware sobre una FPGA Lattice ECP5 (placa Colorlight
